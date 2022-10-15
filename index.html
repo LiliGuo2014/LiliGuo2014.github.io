@@ -6,26 +6,70 @@
 </head>
 
 
-<body>
+<body >
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <style>
+        [type='checkbox'] {
+            margin: 10px 0px 15px 0px;  
+        }
+
+        #cat-photo-form {
+           background-color:green;
+        }
+
+        .silver-background {
+            background-color: silver;
+        }
 
 
-    <h2>CatPhotoApp</h2>
+
+        .thick-green-border{
+            border-color: green;
+            border-width: 10px;
+            border-style: solid;
+            border-radius: 50%;
+        }
+        .smaller-image {
+            width: 100px;
+        }
+        .blue-text {color:blue;}
+        .red-text {
+                    color:red;
+                    font-size: 30px;
+            
+                 }
+        
+        p {
+            font-size: 16px;
+            font-family: monospace ;
+        }
+
+        h2 {
+            font-family: Lobster;
+            
+            
+        }
+    </style>
+
+
+    <h2 id="heading" class="red-text">CatPhotoApp</h2>
 
     <main>
         <h3>Cat Photos</h3>
 
         <!-- ToDO: Add link to cat photos-->
-        <p>Click here to view more cat photos.
+        <p  class="blue-text">Click here to view more cat photos.
             <a href="#" target="_blank"> Search for Cat Photos</a>
 
         </p>
 
-        <a href="https://www.youtube.com"><img src="cutelittlecat.png" alt="A cute little cat smiling">
+        <a href="https://www.youtube.com">
+            <img class="smaller-image thick-green-border" src="cutelittlecat.png" alt="A cute little cat smiling">
         </a>
 
         <h3>Cat Lists</h3>
 
-        <div class="lists">
+        <div class="silver-background">
 
             <p>Things cats <em>love</em> : </p>
             <ul>
@@ -48,7 +92,7 @@
          </div>
         
         
-        <form action="/submit-cat-photo">
+        <form id="cat-photo-form" action="/submit-cat-photo">
             <label for="indoor"> 
                 <input id="indoor" type="radio" name="indoor-outdoor" checked> Indoor 
             </label><br>
