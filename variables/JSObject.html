@@ -1,0 +1,55 @@
+<html >
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
+
+
+</head>
+
+<body>
+
+    <main>
+
+    </main>
+
+ 
+
+    <script >
+var lilycircle = {
+ X: 0,
+ Y: 200,
+ diameter: 50
+
+} ;
+
+var circleX=0;
+
+
+function setup() {
+    createCanvas(600, 400);
+}
+function draw() {
+    //background+
+    background(250,250, 100);
+    //elipse
+    fill(circleX, 0, 0);
+
+    ellipse(lilycircle.X, lilycircle.Y, lilycircle.diameter, lilycircle.diameter);
+    lilycircle.X= lilycircle.X + .5;
+
+
+}
+
+
+    </script>
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>
